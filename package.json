@@ -1,0 +1,38 @@
+{
+  "name": "realworld-backend-typescript",
+  "version": "1.0.0",
+  "description": "Typescript implementation of the realworld backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --stage local",
+    "start": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akydd/realworld-backend-typescript.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "RealWorld",
+    "REST"
+  ],
+  "author": "akydd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akydd/realworld-backend-typescript/issues"
+  },
+  "homepage": "https://github.com/akydd/realworld-backend-typescript#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "typescript": "^5.9.3"
+  }
+}
