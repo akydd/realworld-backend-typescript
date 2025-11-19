@@ -6,11 +6,11 @@ services:
     environment:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: admin
-      POSTGRES_DB: app
+      POSTGRES_DB: app-ts
     volumes:
-      - app-data:/var/lib/postgres
+      - app-ts-data:/var/lib/postgres
     ports:
-      - 8091:5432
+      - 8093:5432
 
 
   test_db:
@@ -20,12 +20,12 @@ services:
     environment:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: admin
-      POSTGRES_DB: test-app
+      POSTGRES_DB: test-app-ts
     volumes:
-      - app-test-data:/var/lib/postgres
+      - app-ts-test-data:/var/lib/postgres
     ports:
-      - 8092:5432
+      - 8094:5432
 
 volumes:
-  app-data:
-  app-test-data:
+  app-ts-data:
+  app-ts-test-data:
