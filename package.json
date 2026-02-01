@@ -1,41 +1,36 @@
 {
   "name": "realworld-backend-typescript",
   "version": "1.0.0",
-  "description": "Typescript implementation of the realworld backend",
+  "description": "> ### [YOUR_FRAMEWORK] codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --config nodemon.json src/index.ts",
-    "start": "node --loader ts-node/esm src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "nodemon --exec node --experimental-strip-types src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/akydd/realworld-backend-typescript.git"
   },
-  "keywords": [
-    "TypeScript",
-    "RealWorld",
-    "REST"
-  ],
-  "author": "akydd",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/akydd/realworld-backend-typescript/issues"
   },
   "homepage": "https://github.com/akydd/realworld-backend-typescript#readme",
   "dependencies": {
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "pg": "^8.16.3",
-    "ts-node": "^10.9.2"
+    "express": "^5.2.1",
+    "pg": "^8.18.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.5",
-    "@types/node": "^24.10.1",
-    "@types/pg": "^8.15.6",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0",
+    "@types/pg": "^8.16.0",
     "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
