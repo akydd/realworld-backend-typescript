@@ -7,7 +7,6 @@ services:
       - "3000:3000"
     volumes:
       - ./src:/app/src
-      - /app/node_modules
     environment:
       DB_HOST: db
       DB_PORT: 5432
